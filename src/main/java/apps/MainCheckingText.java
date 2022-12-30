@@ -18,20 +18,23 @@ public class MainCheckingText {
             System.out.println("String nie zawiera żadnych znaków!!!");
         }
     }
+
     public static boolean isNotNull(String text) {
         return text != null;
     }
+
     public static boolean isPalindrome(String text) {
-            text = text.toLowerCase();
-            text = text.replace(" ", "");
-            text = text.replace(",", "");
-            text = text.replace("?", "");
-            text = text.replace("!", "");
-            text = text.replace("-", "");
-            StringBuilder reverseText = new StringBuilder(text).reverse();
-            return text.equals(reverseText.toString());
+        text = text.toLowerCase();
+        text = text.replace(" ", "");
+        text = text.replace(",", "");
+        text = text.replace("?", "");
+        text = text.replace("!", "");
+        text = text.replace("-", "");
+        StringBuilder reverseText = new StringBuilder(text).reverse();
+        return text.equals(reverseText.toString());
     }
+
     public static int getTextLength(String text) {
-            return text.length();
+        return text.length();
     }
 }
